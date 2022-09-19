@@ -1,0 +1,27 @@
+.main-nav {
+  margin: 0 auto;
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  &__link {
+    color: $color-night-rider;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color $trans-default;
+
+    &:hover,
+    &:focus {
+      color: $color-navy-blue;
+    }
+  }
+}

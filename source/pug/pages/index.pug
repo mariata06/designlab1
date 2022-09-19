@@ -1,0 +1,17 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Тестовое задание - Design Lab"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = false
+  - const footerMods = ""
+  - const currentUrl = "index.html"
+
+block main
+  main
+    +intro()
+    +section-table()
+    +section-form()
+    +gallery()

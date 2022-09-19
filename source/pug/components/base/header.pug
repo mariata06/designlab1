@@ -1,0 +1,28 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "#table",
+        text: "Таблица"
+      },
+      {
+        href: "#form",
+        text: "Форма"
+      },
+      {
+        href: "#gallery",
+        text: "Галерея"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      nav.main-nav
+        ul.main-nav__list
+          each link in headerLinks
+            - const activeState = currentUrl === link.href
+            li.main-nav__item
+              if(activeState)
+                span.main-nav__link.is-active=link.text
+              else
+                a.main-nav__link(href=link.href)=link.text
