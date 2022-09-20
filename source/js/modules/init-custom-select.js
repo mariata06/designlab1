@@ -1,12 +1,10 @@
 let initCustomSelect = () => {
-  let selectTop = document.querySelectorAll('.custom-select__top');
+  let selectTop = document.querySelector('.custom-select__top');
   let selectItem = document.querySelectorAll('.custom-select__item');
 
-  selectTop.forEach(item => {
-    item.addEventListener('click', selectToggle);
-  });
+  selectTop.addEventListener('click', selectToggle);
 
-  selectItem.forEach(item => {
+  selectItem.forEach((item) => {
     item.addEventListener('click', selectChoose);
   });
 

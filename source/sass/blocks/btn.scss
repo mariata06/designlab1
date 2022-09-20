@@ -41,14 +41,14 @@
     border-right: 1px solid $color-gainsboro;
     left: 1px;
     bottom: 1px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
   }
 
   &--plus {
     border-left: 1px solid $color-gainsboro;
     right: 1px;
     bottom: 1px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
   }
 
   &--minus,

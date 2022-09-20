@@ -213,8 +213,8 @@ button,
 
 .header {
   padding: 18px 0;
-  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .header .container {
@@ -252,7 +252,7 @@ button,
 
 .main-nav__link:hover,
 .main-nav__link:focus {
-  color: #0066CC;
+  color: #0066cc;
 }
 
 .btn {
@@ -276,7 +276,7 @@ button,
 
 .btn--filter {
   color: #333333;
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
   border-radius: 10px;
   padding: 4px 18px;
   font-size: 16px;
@@ -286,28 +286,28 @@ button,
 
 .btn--filter.is-active {
   color: #ffffff;
-  background-color: #0066CC;
+  background-color: #0066cc;
 }
 
 .btn--minus {
-  border-right: 1px solid #E1E1E1;
+  border-right: 1px solid #e1e1e1;
   left: 1px;
   bottom: 1px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .btn--plus {
-  border-left: 1px solid #E1E1E1;
+  border-left: 1px solid #e1e1e1;
   right: 1px;
   bottom: 1px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .btn--minus,
 .btn--plus {
   width: 54px;
   height: 54px;
-  color: #0066CC;
+  color: #0066cc;
   font-size: 30px;
   padding: 10px 20px;
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;
@@ -317,7 +317,7 @@ button,
 
 .btn--minus:hover,
 .btn--plus:hover {
-  background-color: #0066CC;
+  background-color: #0066cc;
   color: #ffffff;
 }
 
@@ -334,7 +334,7 @@ button,
   height: 56px;
   border-radius: 4px;
   color: #ffffff;
-  background-color: #0066CC;
+  background-color: #0066cc;
   padding-left: 29px;
   padding-right: 29px;
   letter-spacing: -0.5px;
@@ -343,12 +343,11 @@ button,
 .custom-select {
   margin: 0 auto;
   position: relative;
-  width: 250px;
   font-size: 16px;
   line-height: 24px;
   height: 56px;
   border-radius: 4px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   background-color: #ffffff;
   width: 309px;
 }
@@ -372,7 +371,7 @@ button,
 }
 
 .custom-select__bottom {
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   background-color: #ffffff;
   border-top: 0;
   display: none;
@@ -383,9 +382,7 @@ button,
   z-index: 100;
   max-height: 275px;
   width: 309px;
-  border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
-  overflow-y: auto;
+  border-radius: 0 0 4px 4px;
   overflow-y: scroll;
 }
 
@@ -403,7 +400,7 @@ button,
   height: 82px;
   border-radius: 10px;
   border: 4px solid transparent;
-  background-color: #0066CC;
+  background-color: #0066cc;
   background-clip: content-box;
 }
 
@@ -446,7 +443,7 @@ button,
 }
 
 .custom-select__item {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   height: 56px;
   cursor: pointer;
   font-size: 16px;
@@ -464,12 +461,12 @@ button,
 }
 
 .custom-select__item:first-child {
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .custom-select__item:hover,
 .custom-select__item:focus {
-  color: #0066CC;
+  color: #0066cc;
 }
 
 .section-table {
@@ -511,13 +508,13 @@ button,
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-top: 1px solid #E1E1E1;
-  border-bottom: 1px solid #E1E1E1;
-  background-color: #F5F5F7;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #f5f5f7;
 }
 
 .section-table .table td {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   padding-top: 11px;
   padding-bottom: 13px;
   width: 164px;
@@ -526,14 +523,11 @@ button,
 .section-table .table th:first-child,
 .section-table .table td:first-child {
   padding-left: 31px;
-  width: 305px;
-  width: 255px;
   width: 260px;
 }
 
 .section-table .table th:last-child,
 .section-table .table td:last-child {
-  padding-right: 31px;
   padding-right: 21px;
   width: 235px;
 }
@@ -551,7 +545,7 @@ button,
 .section-table .table__button {
   background: rgba(0, 102, 204, 0.1);
   border-radius: 4px;
-  color: #0066CC;
+  color: #0066cc;
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
@@ -570,7 +564,7 @@ button,
 }
 
 .section-table .table__button:hover {
-  background-color: #0066CC;
+  background-color: #0066cc;
   color: #ffffff;
 }
 
@@ -585,7 +579,7 @@ button,
 }
 
 .section-form .section-form__wrapper {
-  background: #F5F5F7;
+  background: #f5f5f7;
   border-radius: 20px;
   padding: 78px 96px 96px;
   width: 842px;
@@ -632,7 +626,7 @@ button,
   line-height: 24px;
   height: 56px;
   outline: none;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
   padding-left: 16px;
   padding-right: 16px;
@@ -643,35 +637,35 @@ button,
 
 .section-form form input:not(input[type="range"]):hover,
 .section-form form input:not(input[type="range"]):focus {
-  border-color: #0066CC;
+  border-color: #0066cc;
 }
 
 .section-form form input::-webkit-input-placeholder {
-  color: #9B9B9E;
+  color: #9b9b9e;
   font-size: 16px;
   line-height: 24px;
 }
 
 .section-form form input::-moz-placeholder {
-  color: #9B9B9E;
+  color: #9b9b9e;
   font-size: 16px;
   line-height: 24px;
 }
 
 .section-form form input:-ms-input-placeholder {
-  color: #9B9B9E;
+  color: #9b9b9e;
   font-size: 16px;
   line-height: 24px;
 }
 
 .section-form form input::-ms-input-placeholder {
-  color: #9B9B9E;
+  color: #9b9b9e;
   font-size: 16px;
   line-height: 24px;
 }
 
 .section-form form input::placeholder {
-  color: #9B9B9E;
+  color: #9b9b9e;
   font-size: 16px;
   line-height: 24px;
 }
@@ -704,13 +698,12 @@ button,
 }
 
 .section-form form .input-wrapper--wishes {
-  margin-bottom: 32px;
   margin-bottom: 0;
 }
 
 .section-form form .input-wrapper--upload-files .input-wrapper__files-content {
   border-style: dashed;
-  border: 1px dashed #E1E1E1;
+  border: 1px dashed #e1e1e1;
   padding: 30px 145px;
   border-radius: 4px;
   cursor: pointer;
@@ -722,7 +715,7 @@ button,
 }
 
 .section-form form .input-wrapper--upload-files .input-wrapper__files-content .input-wrapper__paragraph {
-  color: #58585D;
+  color: #58585d;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
@@ -767,7 +760,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .section-form form input[type="email"] ~ .input-wrapper__icon--delete:hover,
@@ -786,7 +779,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .section-form form input[type="email"] ~ svg:hover,
@@ -805,7 +798,7 @@ button,
   width: 24px;
   height: 24px;
   fill: #ffffff;
-  stroke: #9B9B9E;
+  stroke: #9b9b9e;
   cursor: pointer;
   -webkit-transition: stroke 0.3s ease;
   -o-transition: stroke 0.3s ease;
@@ -873,12 +866,12 @@ button,
   position: absolute;
   left: 0;
   top: 0;
-  content: '';
+  content: "";
   display: block;
   width: 44px;
   height: 24px;
   border-radius: 100px;
-  background-color: #BABAC2;
+  background-color: #babac2;
   border: 1px solid transparent;
 }
 
@@ -886,7 +879,7 @@ button,
   position: absolute;
   left: 2px;
   top: 2px;
-  content: '';
+  content: "";
   display: block;
   width: 20px;
   height: 20px;
@@ -896,8 +889,8 @@ button,
 }
 
 .section-form form input[type="checkbox"]:checked ~ .input-wrapper__toggle::after {
-  background-color: #0066CC;
-  border: 1px solid #0066CC;
+  background-color: #0066cc;
+  border: 1px solid #0066cc;
 }
 
 .section-form form input[type="checkbox"]:checked ~ .input-wrapper__toggle::before {
@@ -937,7 +930,7 @@ button,
 .breadcrumbs__link {
   font-size: 14px;
   line-height: 16px;
-  color: #52575F;
+  color: #52575f;
   margin-left: 12px;
   margin-right: 12px;
   position: relative;
@@ -984,13 +977,13 @@ button,
   width: 16px;
   height: 16px;
   border-radius: 100px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   margin-right: 8px;
   margin-left: 8px;
 }
 
 .gallery__slider-pagination span.active {
-  background-color: #0066CC;
+  background-color: #0066cc;
 }
 
 .gallery__slider {
@@ -1010,8 +1003,6 @@ button,
   display: grid;
   grid-template-columns: repeat(auto-fill, 430px);
   grid-auto-flow: column dense;
-  -ms-grid-rows: (242px)[2];
-  grid-template-rows: repeat(2, 242px);
   -ms-grid-rows: 242px 242px;
   grid-template-rows: 242px 242px;
   grid-gap: 24px;
@@ -1023,7 +1014,7 @@ button,
   height: 242px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #ffffff;
 }
 
 .gallery__title {
@@ -1060,8 +1051,8 @@ button,
   height: 80px;
   border-radius: 100px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 0.1px 0.3px rgba(0, 0, 0, 0.014), 0px 0.3px 0.8px rgba(0, 0, 0, 0.02), 0px 0.5px 1.5px rgba(0, 0, 0, 0.025), 0px 0.9px 2.7px rgba(0, 0, 0, 0.03), 0px 1.7px 5px rgba(0, 0, 0, 0.036);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 0.1px 0.3px rgba(0, 0, 0, 0.014), 0px 0.3px 0.8px rgba(0, 0, 0, 0.02), 0px 0.5px 1.5px rgba(0, 0, 0, 0.025), 0px 0.9px 2.7px rgba(0, 0, 0, 0.03), 0px 1.7px 5px rgba(0, 0, 0, 0.036);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 0.1px 0.3px rgba(0, 0, 0, 0.01), 0 0.3px 0.8px rgba(0, 0, 0, 0.02), 0 0.5px 1.5px rgba(0, 0, 0, 0.03), 0 0.9px 2.7px rgba(0, 0, 0, 0.03), 0 1.7px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 0.1px 0.3px rgba(0, 0, 0, 0.01), 0 0.3px 0.8px rgba(0, 0, 0, 0.02), 0 0.5px 1.5px rgba(0, 0, 0, 0.03), 0 0.9px 2.7px rgba(0, 0, 0, 0.03), 0 1.7px 5px rgba(0, 0, 0, 0.04);
   -webkit-transition: opacity 0.3s ease, background-color 0.3s ease;
   -o-transition: opacity 0.3s ease, background-color 0.3s ease;
   transition: opacity 0.3s ease, background-color 0.3s ease;
@@ -1069,7 +1060,7 @@ button,
 
 .gallery__btn-prev svg,
 .gallery__btn-next svg {
-  color: #0066CC;
+  color: #0066cc;
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -1086,7 +1077,7 @@ button,
 .gallery__btn-prev:focus,
 .gallery__btn-next:hover,
 .gallery__btn-next:focus {
-  background-color: #0066CC;
+  background-color: #0066cc;
 }
 
 .gallery__btn-prev:hover svg,
@@ -1118,10 +1109,10 @@ button,
 .range-slider__scale span {
   font-size: 12px;
   line-height: 16px;
-  color: #58585D;
+  color: #58585d;
 }
 
-.range-slider #current-value {
+.range-slider .range-slider__current-value {
   width: 222px;
   height: 56px;
   display: -webkit-box;
@@ -1134,7 +1125,7 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #ffffff;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
   border-radius: 4px;
 }
 
@@ -1145,11 +1136,10 @@ button,
 }
 
 .range-slider input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
   display: block;
   width: 16px;
   height: 16px;
-  background-color: #0066CC;
+  background-color: #0066cc;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -1177,7 +1167,7 @@ button,
 .tags span {
   color: #ffffff;
   padding: 7px 16px;
-  background-color: #58585D;
+  background-color: #58585d;
   border-radius: 100px;
   margin-right: 8px;
   font-size: 14px;
@@ -1316,19 +1306,17 @@ button,
 
   .section-table .table td {
     width: 100%;
-    text-align: right;
     padding-left: 37%;
     text-align: left;
     position: relative;
     padding-top: 15px;
     padding-bottom: 14px;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid #e1e1e1;
   }
 
   .section-table .table th:first-child,
   .section-table .table td:first-child {
     width: 100%;
-    padding-left: 0;
     padding-left: 37%;
   }
 
@@ -1356,7 +1344,7 @@ button,
 
   .section-table .table td::before {
     content: attr(data-label);
-    background-color: #F5F5F7;
+    background-color: #f5f5f7;
     position: absolute;
     top: 0;
     left: 0;
@@ -1471,7 +1459,6 @@ button,
   .section-form form input[type="checkbox"] ~ .input-wrapper__toggle {
     position: relative;
     top: unset;
-    margin-left: auto;
     margin-left: 89px;
   }
 
@@ -1562,7 +1549,7 @@ button,
     width: 100%;
   }
 
-  .range-slider #current-value {
+  .range-slider .range-slider__current-value {
     width: 100%;
   }
 
@@ -1587,7 +1574,6 @@ button,
   }
 
   .section-form form input[type="checkbox"] ~ .input-wrapper__toggle {
-    margin-left: unset;
     margin-left: auto;
   }
 

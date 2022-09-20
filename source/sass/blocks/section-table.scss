@@ -42,7 +42,6 @@
   }
 
   .table {
-    // padding-left: 31px;
     border-collapse: collapse;
     width: 100%;
 
@@ -57,37 +56,27 @@
       font-size: 16px;
       line-height: 24px;
     }
+
     th {
       font-weight: 600;
       text-align: left;
       padding-top: 15px;
       padding-bottom: 15px;
-      border-top: 1px solid #E1E1E1;
-      border-bottom: 1px solid #E1E1E1;
+      border-top: 1px solid $color-gainsboro;
+      border-bottom: 1px solid $color-gainsboro;
       background-color: $color-chost-white;
-
-      @include vp-767 {
-        // font-size: 16px;
-        // line-height: 24px;
-        // font-weight: 600;
-      }
     }
 
     td {
-      border-bottom: 1px solid #E1E1E1;
+      border-bottom: 1px solid $color-gainsboro;
       padding-top: 11px;
       padding-bottom: 13px;
-      // width: 200px;
-      // width: 172px;
-      // width: 189px;
       width: 164px;
 
       @include vp-767 {
         width: 100%;
-        text-align: right;
         padding-left: 37%;
         text-align: left;
-        // text-align: right;
         position: relative;
         padding-top: 15px;
         padding-bottom: 14px;
@@ -98,20 +87,16 @@
     th:first-child,
     td:first-child {
       padding-left: 31px;
-      // padding-right: 64px;
-      width: 305px;
-      width: 255px;
       width: 260px;
 
       @include vp-767 {
         width: 100%;
-        padding-left: 0;
         padding-left: 37%;
       }
     }
+
     th:last-child,
     td:last-child {
-      padding-right: 31px;
       padding-right: 21px;
       width: 235px;
 
@@ -134,7 +119,6 @@
       font-size: 14px;
       line-height: 24px;
       font-weight: 600;
-      // max-width: 98px;
       height: 32px;
       margin-left: auto;
       margin-right: 0;
@@ -142,14 +126,14 @@
       align-items: center;
       transition: color $trans-default, background-color $trans-default;
 
+      &:hover {
+        background-color: $color-navy-blue;
+        color: $color-default-white;
+      }
+
       @include vp-767 {
         margin-right: 17px;
       }
-
-        &:hover {
-          background-color: $color-navy-blue;
-          color: $color-default-white;
-        }
     }
   }
 
@@ -159,7 +143,7 @@
   .table td {
     @include vp-767 {
       display: block;
-		  width: 100%;
+      width: 100%;
     }
   }
 
@@ -167,7 +151,7 @@
     @include vp-767 {
       margin-bottom: 14px;
     }
-	}
+  }
 
   .table td::before {
     @include vp-767 {
@@ -187,4 +171,3 @@
     }
   }
 }
-

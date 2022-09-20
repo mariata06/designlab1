@@ -45,7 +45,7 @@ module.exports = {
     'no-caller': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
-    'no-invalid-this': 'error',
+    // 'no-invalid-this': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new-wrappers': 'error',
