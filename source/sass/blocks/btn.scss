@@ -1,9 +1,9 @@
 .btn {
   display: inline-flex;
-  padding: 10px 14px;
+  padding: 0;
 
   color: $color-default-white;
-  background-color: $color-default-white;
+
   border: none;
   cursor: pointer;
 
@@ -15,69 +15,57 @@
     pointer-events: none;
   }
 
-  @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover,
-    &:focus {
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  &--slide-next,
+  &--slide-prev {
+    background-color: transparent;
+    border: 1px solid $color-light-grey;
+    position: unset;
+    left: unset;
+    right: unset;
+    width: 56px;
+    height: 56px;
+
+    @include hover-focus {
       opacity: 0.7;
     }
-  }
 
-  &--filter {
-    color: $color-night-rider;
-    background-color: $color-solitude;
-    border-radius: 10px;
-    padding: 4px 18px;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 500;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
 
-    &.is-active {
-      color: $color-default-white;
-      background-color: $color-navy-blue;
+    &:after {
+      display: none;
     }
   }
 
-  &--minus {
-    border-right: 1px solid $color-gainsboro;
-    left: 1px;
-    bottom: 1px;
-    border-radius: 4px 0 0 4px;
-  }
-
-  &--plus {
-    border-left: 1px solid $color-gainsboro;
-    right: 1px;
-    bottom: 1px;
-    border-radius: 0 4px 4px 0;
-  }
-
-  &--minus,
-  &--plus {
-    width: 54px;
-    height: 54px;
-    color: $color-navy-blue;
-    font-size: 30px;
-    padding: 10px 20px;
-    transition: color $trans-default, background-color $trans-default;
-
-    &:hover {
-      background-color: $color-navy-blue;
-      color: $color-default-white;
+  &--slide-prev {
+    svg {
+      transform: rotate(90deg);
     }
   }
 
-  &--submit {
+  &--slide-next {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &--blue-bg {
     display: flex;
-    align-items: center;
-    font-size: 16px;
-    line-height: 24px;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
     font-weight: 600;
-    height: 56px;
-    border-radius: 4px;
+    padding: 13px 15px 13px;
+    min-width: 174px;
+    min-height: 46px;
     color: $color-default-white;
-    background-color: $color-navy-blue;
-    padding-left: 29px;
-    padding-right: 29px;
-    letter-spacing: -0.5px;
+    background-color: $color-pacific-blue;
   }
 }

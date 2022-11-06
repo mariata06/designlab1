@@ -1,23 +1,24 @@
-import {initCalculateArea} from './modules/init-calculate-area';
-import {initGallerySlider} from './modules/init-gallery-slider';
-import {initPriceRange} from './modules/init-price-range';
-import {initValidateEmail} from './modules/init-validate-email';
-import {initValidatePhone} from './modules/init-validate-phone';
-import {initInputTags} from './modules/init-input-tags';
+import {initCertSlider} from './modules/init-cert-slider';
+import {initPartnersSlider} from './modules/init-partners-slider';
+import {initReviewSlider} from './modules/init-review-slider';
 import {initCustomSelect} from './modules/init-custom-select';
+import {initSmoothScroll} from './modules/init-smooth-scroll';
+import {initPriceRange} from './modules/init-price-range';
+import {initPhoneValidate} from './modules/init-phone-validate';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
-  initCalculateArea();
+  initCertSlider();
+  initPartnersSlider();
+  initReviewSlider();
+  initSmoothScroll();
   initPriceRange();
+  initPhoneValidate('[name="phone"]');
 
   window.addEventListener('load', () => {
-    initGallerySlider();
-    initValidateEmail();
-    initValidatePhone();
-    initInputTags();
+
     initCustomSelect();
   });
 });

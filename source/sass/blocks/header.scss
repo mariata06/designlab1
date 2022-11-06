@@ -1,12 +1,14 @@
 .header {
-  padding: 18px 0;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 8px 0 0;
+
+  background-color: $color-default-white;
 
   .container {
     display: flex;
+    flex-wrap: wrap;
+  }
 
-    @include vp-374 {
-      padding: 0;
-    }
+  &__logo {
+    color: $color-default-white;
   }
 }
